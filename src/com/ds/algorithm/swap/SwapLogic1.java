@@ -1,26 +1,26 @@
-package com.ds.algorithm;
+package com.ds.algorithm.swap;
 
 import java.util.Scanner;
 
 /**
- * Without Using Temp Variable. Using Addition and substraction
+ * Using Temp Variable
  */
-class Logic2 {
+class Logic1 {
     static void swap(int a, int b) {
         System.out.println("Before swap a= " + a + " and b=" + b);
-        a = a + b;
-        b = a - b;
-        a = a - b;
+        int temp = a;
+        a = b;
+        b = temp;
         System.out.println("After  swap a= " + a + " and b=" + b);
     }
 }
-public class SwapLogic2 {
+public class SwapLogic1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter First Number: ");
         int a = scanner.nextInt();
         System.out.print("Enter Second Number: ");
         int b = scanner.nextInt();
-        Logic2.swap(a, b);
+        Logic1.swap(a, b);
     }
 }

@@ -1,4 +1,4 @@
-package com.ds.algorithm;
+package com.ds.algorithm.swap;
 
 import java.util.Scanner;
 
